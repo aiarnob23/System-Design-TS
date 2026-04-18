@@ -73,7 +73,6 @@ class PizzaStore {
 
     // Handles the full pizza ordering process
     orderPizza(type: string){
-
         const pizza = this.factory.createPizza(type);
 
         // Safety check in case invalid type is passed
@@ -87,7 +86,6 @@ class PizzaStore {
         }
     }  
 }
-
 
 
 // LIMITATIONS / IMPROVEMENT POINTS
