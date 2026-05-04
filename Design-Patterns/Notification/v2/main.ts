@@ -60,6 +60,6 @@ async function bootstrap() {
   } catch (err) {
     console.error((err as Error).message);
   }
-}
+} 
 
 bootstrap();
