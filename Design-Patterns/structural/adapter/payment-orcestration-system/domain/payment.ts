@@ -6,11 +6,11 @@ export interface PaymentRequest {
 }
 
 export interface PaymentProvider {
-    charge(request : PaymentRequest) : Promise<PaymentResult>;
+    charge(request:PaymentRequest) : Promise<PaymentResult>;
 }
 
-export interface PaymentResult {
+export interface PaymentResult{
     success: boolean;
-    transactionId: string;
+    transactionId?: string;
     error?: string;
 }
